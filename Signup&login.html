@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup/login</title>
-    <style>
-        .box{
-            background-color:rgb(247, 248, 178);
-            width: 300px;
-            border-radius: 15px;
-            border-width: 4px;
-            border-style:dotted ;
-            position: absolute;
-            top: 20%;
-            left: 38%;
-
-        }
-        .submit{
-            background-color: rgb(241, 210, 35);
-            color:aliceblue;
-            width: 90px;
-            height: 40px;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-        }
-        .body{
-            background-color: rgb(241, 210, 35);
-        }
-    </style>
-</head>
-<body class="body">
-    <form align="center">
-       <fieldset class="box" align="center">
-          <legend><big><big>&lt;  Sign-up  &gt;</big></big></legend>
-           <p>Name:-<input type="text" required></p>
-           <p>Password:-<input type ="password"</p>
-           <p>Date of Birth:-<input type="date"> </p>
-           <p>Email id:-<input type="email" required></p>
-           <p>Gender:-  Male<input type="radio" name="Gender" id="male"required>
-           Female<input type="radio"name="Gender"id="Female"required>
-           </p>
-           <p>Laguages:- English<input type="checkbox" name="language" id="English">
-              Hindi<input type="checkbox" name="language"id="Hindi">
-              Punjabi<input type="checkbox" name="language"id="Punjabi">
-              Haryanvi<input type="checkbox" name="language"id="Haryanvi">
-            </p>
-            <legend><button class="submit"><big>Submit</big></button></legend>
-       </fieldset>
-   </form>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup/login</title>
+        <style>
+            .box {
+                background-color: rgb(247, 248, 178);
+                width: 300px;
+                border-radius: 15px;
+                border-width: 4  px;
+                border-style: dotted ;
+                border-color: "rgb(241, 210, 35)";
+                position: absolute;
+                top: 20%;
+                left: 38%;
+            }
+            .submit {
+                background-color: rgb(241, 210, 35);
+                color: aliceblue;
+                width: 90px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                font-size: 15px;
+                transition: background-color 1s,
+                color 1s;
+            }
+            .submit:hover{
+                background-color: aliceblue;
+                color: rgb(247, 184, 13);
+            }
+            .body {
+                background-color:rgb(204, 250, 97);
+            }
+            .Sign-up{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <form align="center">
+            <fieldset class="box" align="center">
+                <legend class="Sign-up">
+                    &lt; Sign-up &gt;
+                </legend>
+                <p>Name:-<input type="text" required /></p>
+                <p>Password:-<input type ="password"</p>
+                <p>Date of Birth:-<input type="date" /></p>
+                <p>Email id:-<input type="email" required /></p>
+                <p>
+                    Gender:- Male<input
+                        type="radio"
+                        name="Gender"
+                        id="male"
+                        required
+                    />
+                    Female<input
+                        type="radio"
+                        name="Gender"
+                        id="Female"
+                        required
+                    />
+                </p>
+                <p>
+                    Laguages:- English<input
+                        type="checkbox"
+                        name="language"
+                        id="English"
+                    />
+                    Hindi<input type="checkbox" name="language" id="Hindi" />
+                    Punjabi<input
+                        type="checkbox"
+                        name="language"
+                        id="Punjabi"
+                    />
+                    Haryanvi<input
+                        type="checkbox"
+                        name="language"
+                        id="Haryanvi"
+                    />
+                </p>
+                <legend>
+                    <button class="submit"><big><b>Submit</b></big></button>
+                </legend>
+            </fieldset>
+        </form>
+    </body>
 </html>

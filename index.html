@@ -17,8 +17,25 @@
             .dilpreet {
                 text-align: center;
             }
+            .types{
+                background-color:rgb(29, 29, 29);
+                color: aliceblue;
+                border-radius: 8px;
+                padding-right: 4px;
+                padding-left: 4px;
+                padding-top: 4px;
+                padding-bottom: 3px;
+                transition: opacity 0.4s
+            }
+            .types:hover {
+                opacity: 0.6;
+            }
             .body{
                 background-color:rgb(169, 250, 243) ;
+            }
+            .signin button:hover{
+                background-color: rgb(109, 252, 204);
+                box-shadow: 3px 3px 15px rgb(32, 32, 32);
             }
             .signin button{
                 background-color: rgb(74, 252, 192);
@@ -83,7 +100,7 @@
             </li>
         </ul>
         <p> Song Types:-
-        <select name="Songs">
+        <select name="Songs" class="types">
             <option value="English">English</option>
             <option value="Hindi">Hindi</option>
             <option value="Punjabi">Punjabi</option>
