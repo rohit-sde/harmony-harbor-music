@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>youtube clone</title>
+        <style>
+            .header-bar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 57px;
+                margin: 0px 0px 0px 0px;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(189, 187, 187);
+            }
+            .left-section,
+            .right-section {
+                width: 235px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+            }
+            .middle-section {
+                background-color: rgba(255, 255, 255, 0.884);
+                height: 55px;
+                width: 480px;
+                display: flex;
+                align-items: center;
+                margin-right: 75px;
+            }
+            .hamburg {
+                height: 24px;
+                margin: 0px 24px 0px 24px;
+                cursor: pointer;
+            }
+            .youtube-logo {
+                width: 88px;
+                padding: 10px 0px;
+            }
+            .search-bar {
+                height: 40px;
+                display: flex;
+                flex: 1;
+                width: 0px;
+                border: 1px solid rgb(189, 187, 187);
+                box-shadow: inset 1px 1px 0.5px rgb(226, 226, 226);
+                border-radius: 2px;
+                font-size: 17px;
+                padding-left: 10px;
+                font-family: Roboto, arial;
+                margin-left: 10px;
+            }
+            .search-bar:active {
+                border-width: 1px;
+                border-color: aqua;
+            }
+            .search-icon,
+            .voice-icon {
+                height: 23px;
+            }
+            .search-button {
+                height: 40px;
+                width: 66px;
+                border: 1px solid rgb(187, 187, 187);
+                margin-left: -1px;
+                background-color: rgb(245, 245, 245);
+            }
+            .search-button:hover {
+                background-color: rgb(238, 235, 235);
+                cursor: pointer;
+            }
+            .voice-button {
+                height: 40px;
+                width: 40px;
+                margin-left: 8px;
+                border-radius: 20px;
+                border: 0px;
+            }
+            .voice-button:hover {
+                cursor: pointer;
+            }
+            .upload {
+                height: 24px;
+                margin-left: 18px;
+                margin-right: 10px;
+            }
+            .channel {
+                height: 31px;
+                border-radius: 15px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body style="margin: 0px">
+        <div class="header-bar">
+            <div class="left-section">
+                <img src="header/hamburger-menu.svg" class="hamburg" />
+                <img src="header/youtube-logo.svg" class="youtube-logo" />
+            </div>
+            <div class="middle-section">
+                <input
+                    type="search"
+                    class="search-bar"
+                    placeholder="Search"
+                /><button class="search-button">
+                    <img class="search-icon" src="header/search.svg" />
+                </button>
+                <button class="voice-button">
+                    <img
+                        class="voice-icon"
+                        src="header/voice-search-icon.svg"
+                    />
+                </button>
+            </div>
+            <div
+                class="right-section"
+                style="display: flex; align-items: center"
+            >
+                <img src="header/upload.svg" class="upload" />
+                <img src="header/youtube-apps.svg" class="upload" />
+                <img src="header/notifications.svg" class="upload" />
+                <img src="header/my-channel.jpeg" class="channel" />
+            </div>
+        </div>
+    </body>
+</html>
