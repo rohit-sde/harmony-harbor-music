@@ -1,17 +1,17 @@
-.video-div {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0px 11px 37px 0px;
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 11px;
+    row-gap: 14px;
 }
 .video-thumbnail {
-    height: 170px;
+    width: 100%;
     display: inline-block;
-    margin-bottom: 9px;
 }
 .channel-icon {
     display: inline-block;
     margin-top: 0px;
-    height: 80px;
+    height: 25%;
     vertical-align: top;
 }
 .channel-pic {
@@ -24,7 +24,7 @@
     font-size: 14px;
     font-family: Roboto, Arial, sans-serif;
     font-weight: 500;
-    width: 200px;
+    width: 75%;
     display: inline-block;
 }
 .video-name {
@@ -35,4 +35,14 @@
     color: rgb(102, 102, 102);
     font-family: Roboto, Arial, sans-serif;
     margin: 2px;
+}
+@media screen and (min-width: 800px){
+    .main-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1050px){
+    .main-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
