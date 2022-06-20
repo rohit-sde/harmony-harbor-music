@@ -52,6 +52,10 @@
     font-size: 14px;
     padding-left: 14px;
 }
+.search-bar:focus {
+    border-color: rgb(115, 203, 253);
+    outline: 0;
+}
 
 .search-icon,
 .voice-icon {
@@ -74,7 +78,7 @@
 .search-button .tooltip {
     pointer-events: none;
     border: 1px solid #ccc;
-    background-color: #474747;
+    background-color: #3d3c3c;
     border-radius: 3px;
     position: relative;
     top: 19px;
