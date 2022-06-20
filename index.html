@@ -26,6 +26,59 @@
         />
 
         <style>
+            @keyframes pop {
+                12% {
+                    rotate: (45deg);
+                }
+                25% {
+                    rotate: (90deg);
+                }
+                37% {
+                    rotate: 135deg;
+                }
+                50% {
+                    rotate: 180deg;
+                    transform: scale(0.7);
+                }
+                62% {
+                    rotate: 225deg;
+                }
+                75% {
+                    rotate: 270deg;
+                }
+                87% {
+                    rotate: 315deg;
+                }
+                100% {
+                    rotate: (360deg);
+                    transform: scale(1.2);
+                }
+            }
+            .animated-word {
+                animation-name: pop;
+                animation-duration: 5s;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: linear;
+                border: 2px solid rgb(126, 241, 141);
+                background-color: rgb(248, 166, 166);
+                padding: 10px;
+                color: rgb(250, 250, 209);
+                display: inline-block;
+            }
+            .animated-2word {
+                animation-name: pop;
+                animation-duration: 5s;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate reverse;
+                animation-timing-function: linear;
+                border: 2px solid rgb(83, 204, 99);
+                padding: 10px;
+                color: rgb(34, 34, 22);
+                display: inline-block;}
+
             #main-bar {
                 /* background-color: rgb(8, 8, 8); */
                 border-radius: 18px;
@@ -115,7 +168,7 @@
     </head>
     <body class="body">
         <header>
-            <h1 align="center">....<u>Harmony Harbor</u>....</h1>
+            <h1 align="center">...<u><div class="animated-word">H</div>armony <div class="animated-2word">H</div>arbor</u>...</h1>
         </header>
         <p align="right" class="signin button">
             <a
@@ -126,6 +179,7 @@
                 </button>
             </a>
         </p>
+        <!-- <div class="animated-word">H</div> -->
         <div id="main-bar">
             <a href="C:\Users\root\Desktop\pro\harmony-harbor\index.html">
                 <button>
