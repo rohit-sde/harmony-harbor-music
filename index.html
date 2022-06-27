@@ -27,53 +27,59 @@
 
         <style>
             @keyframes pop {
-                12% {
-                    rotate: (45deg);
+                10% {
+                    rotate: (36deg);
                 }
-                25% {
-                    rotate: (90deg);
+                20% {
+                    rotate: (72deg);
+                    transform: scale(1.2);
                 }
-                37% {
-                    rotate: 135deg;
+                30% {
+                    rotate: 108deg;
+                }
+                40% {
+                    rotate: 144deg;
                 }
                 50% {
                     rotate: 180deg;
-                    transform: scale(0.7);
                 }
-                62% {
-                    rotate: 225deg;
+                60% {
+                    rotate: 216deg;
                 }
-                75% {
-                    rotate: 270deg;
+                70% {
+                    rotate: 252deg;
                 }
-                87% {
-                    rotate: 315deg;
+                80% {
+                    rotate: (288deg);
+                    transform: scale(1.2);
+                }
+                90% {
+                    rotate: 324deg;
                 }
                 100% {
-                    rotate: (360deg);
-                    transform: scale(1.2);
+                    rotate: 360deg;
                 }
             }
             @keyframes animation {
                 0% {
                     translate:0px;
-                    rotate: 60deg;
+                    rotate: 0deg;
                 }
                 20% {
                     translate:260px;
-                    rotate: 120deg;
+                    rotate: 72deg;
                 }
                 40% {
                     translate:520px;
-                    rotate: 180deg;
+                    rotate: 144deg;
                 }
                 60% {
                     translate:780px;
-                    rotate: 240deg;
+                    rotate: 216deg;
                 }
                 80% {
                     translate:1060px;
-                    rotate: 300deg;
+                    rotate: 288deg;
                 }
                 100% {
                     translate:1300px;
@@ -82,8 +88,8 @@
             }
             .animated-word {
                 animation-name: pop;
-                animation-duration: 2s;
-                animation-delay: 1s;
+                animation-duration: 3s;
+                animation-delay: -3s;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 animation-timing-function: linear;
@@ -95,10 +101,10 @@
             }
             .animated-2word {
                 animation-name: pop;
-                animation-duration: 5s;
-                animation-delay: 1s;
+                animation-duration: 3s;
+                animation-delay: 0s;
                 animation-iteration-count: infinite;
-                animation-direction: alternate reverse;
+                animation-direction: alternate;
                 animation-timing-function: linear;
                 border: 2px solid rgb(83, 204, 99);
                 padding: 10px;
@@ -141,8 +147,8 @@
             }
             .anim {
                 animation-name: animation;
-                animation-duration: 8s;
-                animation-delay: 1s;
+                animation-duration: 7s;
+                animation-delay: 0s;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 animation-timing-function: linear;
