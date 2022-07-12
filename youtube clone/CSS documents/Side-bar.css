@@ -1,19 +1,19 @@
 .side-bar {
-    position: fixed;
     background-color: rgb(255, 255, 255);
-    top: 60px;
-    left: 0;
     bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 60px;
     width: 70px;
 }
 .side-bar-butttons {
+    align-items: center;
     background-color: white;
-    height: 74px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+    height: 74px;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
 .side-bar-butttons:hover {
     background-color: rgb(226, 223, 223);
